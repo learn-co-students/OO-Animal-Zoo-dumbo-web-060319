@@ -43,4 +43,3 @@ class Zoo
             zoo.location == zoo
         end 
     end
-

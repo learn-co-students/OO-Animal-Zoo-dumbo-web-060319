@@ -13,7 +13,7 @@ animal2 = Animal.new("Snatcher", "Masai Lion", 200, zoo1)
 
 prisoner_x = Animal.new("Kronos", "Titan", 280, zoo2)
 prisoner_xx = Animal.new("Krios", "Titan", 270, zoo2)
-prisoner_y = Animal.new("Eris", "Child of Nyx", 158, zoo2)
+prisoner_y = Animal.new("Eris", "Half-Blood", 158, zoo2)
 prisoner_z = Animal.new("Kelli", "Empousa", 142, zoo2)
 
 binding.pry

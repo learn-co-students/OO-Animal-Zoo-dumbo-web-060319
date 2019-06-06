@@ -6,6 +6,7 @@ class Zoo
     def initialize (name, location)
         @name = name
         @location = location
+        @@all << self
     end
     
     def self.all 
@@ -25,7 +26,7 @@ class Zoo
     end
 
     def find_by_species(species)
-        self.animals.map do |animal|
+        self.animals.select do |animal|
             animal.species == species
         end
     end
@@ -39,7 +40,11 @@ class Zoo
     end
 
     def self.find_by_location(location)
-        self.all.select |zoo|
-            zoo.location == zoo
+        found = []
+        all.each do |zoo|
+            found << zoo if zoo.location == location
         end 
+        found.flatten
     end
+
+end

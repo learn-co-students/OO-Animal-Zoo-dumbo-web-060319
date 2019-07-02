@@ -33,7 +33,8 @@ end
 #and return an array of all the animals in that zoo,
 #which are of that species ## not working yet
 def find_by_species(species)
-  Animal.all.select {|element| element.species.zoo == species}
+  # binding.pry
+  animals.select {|element| element.species == species}
 end
 
 #should return an array of all the nicknames of animals
